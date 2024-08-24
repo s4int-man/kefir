@@ -1,0 +1,56 @@
+.comment {
+    margin-top: 32px;
+}
+
+.top-block {
+    display: flex;
+    justify-content: space-between;
+
+    .top-left-block {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+
+            .avatar-img {
+                width: 68px;
+            }
+        }
+
+        .name-and-date {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+
+            .name {
+                color: white;
+            }
+            
+            .date {
+                color: #8297AB;
+            }
+        }
+    }
+
+    .top-right-block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+    
+        img {
+            width: 18px;
+        };
+    }
+}
+
+.text-block {
+    padding-left: 88px;
+    color: white;
+}

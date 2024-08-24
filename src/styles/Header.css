@@ -1,0 +1,11 @@
+.header {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes {
+    display: flex;
+    gap: 10px;
+}

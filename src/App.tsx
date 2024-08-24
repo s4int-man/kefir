@@ -1,24 +1,17 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
+import { Comments } from "src/components/Comments";
+import { Header } from "src/components/Header";
 
 function App() {
+    const [ commentsCount, setCommentsCount ] = useState<number>(267);
+    const [ likesCount, setLikesCount ] = useState(8632);
+
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <div className="app">
+            <Header commentsCount={commentsCount} likesCount={likesCount} />
+            <hr />
+            <Comments setCommentsCount={setCommentsCount} setLikesCount={setLikesCount} />
         </div>
     );
 }
